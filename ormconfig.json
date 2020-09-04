@@ -1,0 +1,25 @@
+{
+   "type": "postgres",
+   "host": "localhost",
+   "port": 5433,
+   "username": "postgres",
+   "password": "admin",
+   "database": "EtheriumdbNew",
+   "synchronize": true,
+   "requestTimeout": 15000,
+   "logging": false,
+   "entities": [
+      "dist/entity/**/*.{js,ts}"
+   ],
+   "migrations": [
+      "dist/entity/migration/**/*.{js,ts}"
+   ],
+   "subscribers": [
+      "dist/entity/subscriber/**/*.{js,ts}"
+   ],
+   "cli": {
+      "entitiesDir": "src/entity",
+      "migrationsDir": "src/migration",
+      "subscribersDir": "src/subscriber"
+   }
+}
